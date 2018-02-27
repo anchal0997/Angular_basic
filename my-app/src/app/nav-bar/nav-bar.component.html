@@ -1,0 +1,10 @@
+<div >
+  <ul style="style : none" class="list">
+    <h1>
+      <li *ngFor="let item of menu; index as i">{{i}}&nbsp; : &nbsp;{{item.item}} </li>
+    </h1>
+  </ul>
+<input type="text" [(ngModel)]="name">
+  <div><p>TWO WAY DATA BINDED:</p> {{name}}</div>
+<button (click)="getData(name)">GET DATA</button>
+</div>
